@@ -1,0 +1,30 @@
+npm install nedemon
+
+
+controllers => user client request handles 
+utils file => used to store files in different folders
+user.models => to match table of user
+
+M => model to connect database(rows/update/delete)
+V => view
+C => request handle
+
+1. login request data
+   - email
+   - password
+2. email and password validation
+    - email -> @ it is valid email or not
+    - password -> minimum 6charts or max 18chars
+3. check if mail is already exits in database  
+    - db action | select * from users where email=email
+4 if email exits and then compare provide password with db password  
+   - db action | select * from users where email = email and password = password
+5. login sucess response      
+
+
+
+
+clent ---> user.router.js ----> user.controller.getalluser()
+
+
+
